@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+        }
+        img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .multimedia {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        video {
+            max-width: 100%;
+            border: 1px solid #ccc;
+        }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .photo-gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Profil Saya</h1>
+    <img src="foto-saya.jpg" alt="Foto Diri">
+</header>
+
+<div class="content">
+    <h2>Biodata Lengkap</h2>
+    <p>Nama: John Doe</p>
+    <p>Usia: 25 Tahun</p>
+    <p>Pekerjaan: Pengembang Web</p>
+    <p>Email: john.doe@example.com</p>
+
+    <h2>Deskripsi Diri</h2>
+    <p>Saya adalah seorang pengembang web yang berpengalaman dalam membangun aplikasi dan situs web interaktif. Saya memiliki latar belakang dalam desain UI/UX dan pemrograman front-end, serta pengalaman bekerja dengan berbagai teknologi web.</p>
+    
+    <p>Saya sangat menyukai tantangan baru dan selalu mencari cara untuk meningkatkan keterampilan saya. Di waktu luang, saya menikmati berpetualang, fotografi, dan menjelajahi teknologi terbaru dalam pengembangan perangkat lunak.</p>
+
+    <h2>Konten Multimedia</h2>
+    <div class="multimedia">
+        <div>
+            <h3>Video Perkenalan</h3>
+            <video controls>
+                <source src="perkenalan.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video ini.
+            </video>
+        </div>
+        <div>
+            <h3>Koleksi Foto</h3>
+            <div class="photo-gallery">
+                <img src="foto1.jpg" alt="Foto 1">
+                <img src="foto2.jpg" alt="Foto 2">
+                <img src="foto3.jpg" alt="Foto 3">
+            </div>
+        </div>
+    </div>
+
+    <h2>Download CV</h2>
+    <p>Untuk informasi lebih lanjut, Anda dapat mengunduh CV saya di bawah ini:</p>
+    <a href="cv-john-doe.pdf" download>Download CV</a>
+</div>
+
+</body>
+</html>
