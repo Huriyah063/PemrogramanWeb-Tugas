@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form pemesanan laptop</title>
+</head>
+<body style="background-color:rgb(248, 248, 248);color:rgb(28, 26, 26);">
+    <fieldset>
+        <legend>form pemesanan anda</legend>
+        <div style="margin:20px;">
+            <div style="float:left; margin-right:20px;">
+                <img src="C:\xampp\htdocs\pemrogramanweb1\praktikum2\img\WhatsApp Image 2024-10-18 at 05.33.10.jpeg" alt="Foto Saya" width="150" height="150">
+            </div>
+            <h1>Welcome To huri's Laptop</h1>
+            <p>Silahkan isi di sini!</p>
+            <form action="pesanan_laptop.html">
+                <div style="overflow: hidden">
+                    <table>
+                        <thead>
+                            <tr>
+                             <td>informasi anda:</td>
+                            </tr>
+                         </thead>
+                         <tbody>
+                            <tr>
+                                <td><label for="date">Tanggal</label></td>
+                                 <td><input type="date" id="date" nama="date" required></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Jenis kelamin</p>
+                                <td><input type="radio" id="jenis_kelamin" nama="jenis_kelamin">Perempuan
+                                    <input type="radio" id="jenis_kelamin" nama="jenis_kelamin">Laki-laki
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="nama">Nama</label></td>
+                                <td><input type="text" id="nama" nama="nama" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="notelp">No Telpon</label></td>
+                                <td><input type="number" id="notelp" nama="notelp" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="notelp">Email</label></td>
+                                <td> <input type="email" id="email" nama="email" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Alamat</label></td>
+                                <td><input type="text" id="alamat" nama="alamat" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="namalaptop">Nama laptop</label></td>
+                                <td><input type="text" id="namalaptop" nama="namalaptop" required></td>
+                            </tr>
+                                <td>
+                                    <h4>Pilih Metode pembayaran</h4>
+                                    <input type="checkbox" id="" name="bank" value="bmn">Bank Mandiri <br>
+                                    <input type="checkbox" id="" name="bank" value="bmm">Bank Muamalat <br>
+                                    <input type="checkbox" id="" name="bank" value="bri">Bank BRI<br>
+                                    <input type="checkbox" id="" name="bank" value="bsi">Bank BSI <br>
+                                    <input type="checkbox" id="" name="bank" value="bca">Bank BCA<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="nama">Notes Pemesanan</label></td>
+                                <td><textarea name="Notes" id="Notes" required placeholder="Tidak lebih dari 1000 karakter"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                 <h4>Number</h4>
+                                 <label for="pesan pizza"></label>
+                                   <input type="number" min="1" max="10">
+                                   <br><br>
+
+                                   <button type="submit" value="pesan">Pesan Sekarang</button>
+                                   <button type="reset"m value="reset">Reset</button> 
+                                </td>
+                            </tr>
+                         </tbody> 
+                    </table> 
+            </form>
+    </fieldset> 
+</body>
+</html>
